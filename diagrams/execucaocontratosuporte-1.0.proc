@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_BXk9gODvEeydTb8Jw5-_uA" name="execucaocontratosuporte" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_BX8w8ODvEeydTb8Jw5-_uA" name="Process_0dmm2xm">
+    <elements xmi:type="process:Pool" xmi:id="_BX8w8ODvEeydTb8Jw5-_uA" name="Execucao contrato de suporte">
       <elements xmi:type="process:Lane" xmi:id="_BYEFsODvEeydTb8Jw5-_uA" name="Equipa técnica (suporte)">
         <elements xmi:type="process:StartEvent" xmi:id="_BYIXIODvEeydTb8Jw5-_uA" name="Inicio de execução contrato de suporte" outgoing="_BYtl8ODvEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYIXIuDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>

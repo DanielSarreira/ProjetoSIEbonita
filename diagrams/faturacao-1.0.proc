@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_D6a_oODtEeydTb8Jw5-_uA" name="validarfatura" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_D6t6kODtEeydTb8Jw5-_uA" name="Process_16bp0q2">
+  <process:MainProcess xmi:id="_D6a_oODtEeydTb8Jw5-_uA" name="faturacao" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_D6t6kODtEeydTb8Jw5-_uA" name="validacao fatura cliente">
       <elements xmi:type="process:Lane" xmi:id="_D63rkODtEeydTb8Jw5-_uA" name="Comercial">
         <elements xmi:type="process:StartEvent" xmi:id="_D7BckODtEeydTb8Jw5-_uA" name="Validação de fatura requisitada" outgoing="_D9aCPODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D7BckuDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -179,7 +179,7 @@
         <value xmi:type="expression:Expression" xmi:id="_D6t6n-DtEeydTb8Jw5-_uA" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <elements xmi:type="process:Pool" xmi:id="_D8gqYODtEeydTb8Jw5-_uA" name="Process_0hzc8jn">
+    <elements xmi:type="process:Pool" xmi:id="_D8gqYODtEeydTb8Jw5-_uA" name="faturacao">
       <elements xmi:type="process:Lane" xmi:id="_D8p0QODtEeydTb8Jw5-_uA" name="Contabilidade">
         <elements xmi:type="process:StartEvent" xmi:id="_D8p0SeDtEeydTb8Jw5-_uA" name="Existem faturas para passar" outgoing="_D-ve8ODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D8p0S-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>

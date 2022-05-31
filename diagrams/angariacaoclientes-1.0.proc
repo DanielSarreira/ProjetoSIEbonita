@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_mEajwODtEeydTb8Jw5-_uA" name="outro" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_mEwiAODtEeydTb8Jw5-_uA" name="Process_1lncvrw">
+  <process:MainProcess xmi:id="_mEajwODtEeydTb8Jw5-_uA" name="angariacaoclientes" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_mEwiAODtEeydTb8Jw5-_uA" name="Angaricao de clientes de suporte">
       <elements xmi:type="process:Lane" xmi:id="_mE6TAODtEeydTb8Jw5-_uA" name="Equipa de pré vendas">
         <elements xmi:type="process:Task" xmi:id="_mFDc8ODtEeydTb8Jw5-_uA" name="Elaboração de uma proposta de contrato" outgoing="_mGbV8ODtEeydTb8Jw5-_uA" incoming="_mGXEgODtEeydTb8Jw5-_uA _mG0-kODtEeydTb8Jw5-_uA" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_mFDc8uDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -20,7 +20,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_mFDdAODtEeydTb8Jw5-_uA" name="Comercial">
-        <elements xmi:type="process:StartEvent" xmi:id="_mFNN8ODtEeydTb8Jw5-_uA" name="Event_0hukbdy" outgoing="_mGBtUODtEeydTb8Jw5-_uA">
+        <elements xmi:type="process:StartEvent" xmi:id="_mFNN8ODtEeydTb8Jw5-_uA" name="Pretendesse angariar clientes para suporte" outgoing="_mGBtUODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_mFNN8uDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_mFNN8eDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_mFNN8-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_-83OkODuEeydTb8Jw5-_uA" name="elaboracaopropostamedida" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_-9T6gODuEeydTb8Jw5-_uA" name="Process_0jbfnhn">
+    <elements xmi:type="process:Pool" xmi:id="_-9T6gODuEeydTb8Jw5-_uA" name="Elaboracao da proposta do projeto a medida do cliente">
       <elements xmi:type="process:Lane" xmi:id="_-9aBIODuEeydTb8Jw5-_uA" name="Pré-venda">
         <elements xmi:type="process:StartEvent" xmi:id="_-9eSkODuEeydTb8Jw5-_uA" name="Pedido de Projeto não standard" outgoing="_--Q8wODuEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_-9eSkuDuEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>

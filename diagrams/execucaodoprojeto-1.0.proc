@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_8RWDgODuEeydTb8Jw5-_uA" name="outro3" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_8Rz9kODuEeydTb8Jw5-_uA" name="Process_0qy3rvj">
+  <process:MainProcess xmi:id="_8RWDgODuEeydTb8Jw5-_uA" name="execucaodoprojeto" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_8Rz9kODuEeydTb8Jw5-_uA" name="Execucao do projeto">
       <elements xmi:type="process:Lane" xmi:id="_8R42EODuEeydTb8Jw5-_uA" name="Equipa de projeto">
         <elements xmi:type="process:Task" xmi:id="_8R-8sODuEeydTb8Jw5-_uA" name="Reunir com o comercial e define a equipa de projeto" outgoing="_8Th00ODuEeydTb8Jw5-_uA" incoming="_8TexgODuEeydTb8Jw5-_uA" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_8R-8suDuEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -192,7 +192,7 @@
         <value xmi:type="expression:Expression" xmi:id="_8R0kruDuEeydTb8Jw5-_uA" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <elements xmi:type="process:Pool" xmi:id="_8S0DIODuEeydTb8Jw5-_uA" name="Process_12xky68">
+    <elements xmi:type="process:Pool" xmi:id="_8S0DIODuEeydTb8Jw5-_uA" name="Avaliacao de desempenho do projeto">
       <elements xmi:type="process:Lane" xmi:id="_8S6JwODuEeydTb8Jw5-_uA" name="Gestor projeto">
         <elements xmi:type="process:InclusiveGateway" xmi:id="_8S90IODuEeydTb8Jw5-_uA" name="Gateway_0k6jxh0" outgoing="_8T4aIODuEeydTb8Jw5-_uA _8T8EgODuEeydTb8Jw5-_uA" incoming="_8UF1gODuEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_8S90IuDuEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>

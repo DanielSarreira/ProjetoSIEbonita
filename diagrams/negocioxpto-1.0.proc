@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_gXyYIODtEeydTb8Jw5-_uA" name="cantosuperiordi" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_gYFTEODtEeydTb8Jw5-_uA" name="Process_13cx1va">
+  <process:MainProcess xmi:id="_gXyYIODtEeydTb8Jw5-_uA" name="negocioxpto" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_gYFTEODtEeydTb8Jw5-_uA" name="Negocio da XPTO">
       <elements xmi:type="process:Lane" xmi:id="_gYFTLeDtEeydTb8Jw5-_uA" name="Comercial">
         <elements xmi:type="process:XORGateway" xmi:id="_gYPEEODtEeydTb8Jw5-_uA" name="Projeto standard?" outgoing="_gZIcAODtEeydTb8Jw5-_uA _gZRl4ODtEeydTb8Jw5-_uA" incoming="_gZIb8ODtEeydTb8Jw5-_uA _gZIb-ODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_gYPEEuDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
