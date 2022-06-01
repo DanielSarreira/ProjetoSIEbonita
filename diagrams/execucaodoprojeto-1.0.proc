@@ -490,7 +490,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_8SmnweDuEeydTb8Jw5-_uA" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_8SqSJODuEeydTb8Jw5-_uA" type="3014" element="_8SqSIODuEeydTb8Jw5-_uA" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_8Sq5MODuEeydTb8Jw5-_uA" type="5030">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_8Sq5MeDuEeydTb8Jw5-_uA" x="46" y="-32"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_8Sq5MeDuEeydTb8Jw5-_uA" x="3" y="4"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8SqSJeDuEeydTb8Jw5-_uA" x="956" y="137"/>
             </children>

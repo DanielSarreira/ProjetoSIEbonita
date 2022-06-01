@@ -13,7 +13,11 @@
         <businessObject qualifiedName="com.company.model.Faturas">
             <fields>
                 <field type="INTEGER" length="255" name="nrHoras" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="validado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_validado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_aceite" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_desuporte" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_validadesuporte" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_validadeprojeto" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
