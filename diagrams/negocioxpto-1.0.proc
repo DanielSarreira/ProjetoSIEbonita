@@ -254,7 +254,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="__jvdwOGxEeyyCuc_HDjyTw"/>
         <condition xmi:type="expression:Expression" xmi:id="__jvdweGxEeyyCuc_HDjyTw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_D-4F8OGqEeyyCuc_HDjyTw" name="Comercial"/>
+      <actors xmi:type="process:Actor" xmi:id="_D-4F8OGqEeyyCuc_HDjyTw" name="Comercial" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_FL1BQOGqEeyyCuc_HDjyTw" name="pre-vendas"/>
       <contract xmi:type="process:Contract" xmi:id="_gYFTJODtEeydTb8Jw5-_uA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_gYFTEeDtEeydTb8Jw5-_uA">

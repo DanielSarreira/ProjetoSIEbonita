@@ -22,6 +22,7 @@
         <businessObject qualifiedName="com.company.model.Projeto">
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="proposta" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_acabado" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
