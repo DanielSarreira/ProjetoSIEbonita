@@ -37,6 +37,7 @@
                 <field type="BOOLEAN" length="255" name="is_aceite" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_standart" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_valida" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="is_suporte" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

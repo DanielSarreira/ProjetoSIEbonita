@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_8RWDgODuEeydTb8Jw5-_uA" name="execucaodoprojeto" author="danis" bonitaVersion="7.12.1" bonitaModelVersion="7.12.0-004">
+  <process:MainProcess xmi:id="_8RWDgODuEeydTb8Jw5-_uA" name="execucaodoprojeto" author="danis" bonitaVersion="7.14.0" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_8Rz9kODuEeydTb8Jw5-_uA" name="Execucao do projeto">
       <elements xmi:type="process:Lane" xmi:id="_8R42EODuEeydTb8Jw5-_uA" name="Equipa de projeto" actor="_E4CuUOHFEeyyCuc_HDjyTw">
         <elements xmi:type="process:Task" xmi:id="_8R-8sODuEeydTb8Jw5-_uA" name="Reunir com o comercial e define a equipa de projeto" outgoing="_8Th00ODuEeydTb8Jw5-_uA" incoming="_8TexgODuEeydTb8Jw5-_uA" overrideActorsOfTheLane="false" priority="1">
@@ -153,11 +153,11 @@
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TWOoODuEeydTb8Jw5-_uA" target="_8SCAAODuEeydTb8Jw5-_uA" source="_SZI1cOG9EeyyCuc_HDjyTw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TWOoeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8TWOouDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8TWOouDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TYq4ODuEeydTb8Jw5-_uA" target="_8SMYEODuEeydTb8Jw5-_uA" source="_8SR3oODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TZR8ODuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8TZR8eDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8TZR8eDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TbuMODuEeydTb8Jw5-_uA" name="Não" target="_8Sw_0ODuEeydTb8Jw5-_uA" source="_8SYlUODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TbuMeDuEeydTb8Jw5-_uA"/>
@@ -167,19 +167,19 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TexgODuEeydTb8Jw5-_uA" target="_8R-8sODuEeydTb8Jw5-_uA" source="_8SCAAODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TexgeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8TfYkODuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8TfYkODuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8Th00ODuEeydTb8Jw5-_uA" target="_8SG4gODuEeydTb8Jw5-_uA" source="_8R-8sODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8Th00eDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8Th00uDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8Th00uDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TkREODuEeydTb8Jw5-_uA" target="_8SYlUODuEeydTb8Jw5-_uA" source="_8ShIMODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TkREeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8TkREuDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8TkREuDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TnUYODuEeydTb8Jw5-_uA" target="_8ShIMODuEeydTb8Jw5-_uA" source="_8SG4gODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TnUYeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8TnUYuDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8TnUYuDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TqXsODuEeydTb8Jw5-_uA" name="Sim" target="_8SeE4ODuEeydTb8Jw5-_uA" source="_8SYlUODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TqXseDuEeydTb8Jw5-_uA"/>
@@ -189,15 +189,15 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8TtbAODuEeydTb8Jw5-_uA" target="_8SR3oODuEeydTb8Jw5-_uA" source="_8SeE4ODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8TtbAeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8TtbAuDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8TtbAuDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8Tv3QODuEeydTb8Jw5-_uA" target="_8SG4gODuEeydTb8Jw5-_uA" source="_8Sw_0ODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8Tv3QeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8Tv3QuDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8Tv3QuDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8Ty6kODuEeydTb8Jw5-_uA" target="_8SqSIODuEeydTb8Jw5-_uA" source="_8Sw_0ODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8Ty6keDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8Ty6kuDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8Ty6kuDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_E4CuUOHFEeyyCuc_HDjyTw" name="equipaprojeto" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_GHGicOHFEeyyCuc_HDjyTw" name="gestaoprojeto"/>
@@ -300,31 +300,31 @@
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8T194ODuEeydTb8Jw5-_uA" target="_8TFv8ODuEeydTb8Jw5-_uA" source="_8TIMMODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8T194eDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8T194uDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8T194uDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8T4aIODuEeydTb8Jw5-_uA" name="Caso justificar" target="_8TTLUODuEeydTb8Jw5-_uA" source="_8S90IODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8T5BMODuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8T5BMeDuEeydTb8Jw5-_uA" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8T5BMeDuEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8T8EgODuEeydTb8Jw5-_uA" name="Sempre" target="_8TIMMODuEeydTb8Jw5-_uA" source="_8S90IODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8T8EgeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8T8EguDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8T8EguDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8T_H0ODuEeydTb8Jw5-_uA" target="_8TBegODuEeydTb8Jw5-_uA" source="_8TFv8ODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8T_H0eDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8T_H0uDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8T_H0uDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8UCyMODuEeydTb8Jw5-_uA" target="_8TBegODuEeydTb8Jw5-_uA" source="_8TTLUODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8UCyMeDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8UCyMuDuEeydTb8Jw5-_uA" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8UCyMuDuEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8UF1gODuEeydTb8Jw5-_uA" target="_8S90IODuEeydTb8Jw5-_uA" source="_8TL2kODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8UF1geDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8UGckODuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8UGckODuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_8UJf4ODuEeydTb8Jw5-_uA" target="_8TQvEODuEeydTb8Jw5-_uA" source="_8TBegODuEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8UJf4eDuEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_8UJf4uDuEeydTb8Jw5-_uA" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_8UJf4uDuEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_guURoOHFEeyyCuc_HDjyTw" name="gestorprojeto" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_8S0DNODuEeydTb8Jw5-_uA"/>
