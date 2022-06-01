@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_D6a_oODtEeydTb8Jw5-_uA" name="faturacao" author="danis" bonitaVersion="7.14.0" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_D6t6kODtEeydTb8Jw5-_uA" name="validacao fatura cliente">
-      <elements xmi:type="process:Lane" xmi:id="_D63rkODtEeydTb8Jw5-_uA" name="Comercial">
+      <elements xmi:type="process:Lane" xmi:id="_D63rkODtEeydTb8Jw5-_uA" name="Comercial" actor="_qpO3EOHPEeyyCuc_HDjyTw">
         <elements xmi:type="process:StartEvent" xmi:id="_D7BckODtEeydTb8Jw5-_uA" name="Validação de fatura requisitada" outgoing="_D9aCPODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D7BckuDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D7BckeDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -39,7 +39,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_D7dhc-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_D7dheODtEeydTb8Jw5-_uA" name="Gestor de equipa de suporte">
+      <elements xmi:type="process:Lane" xmi:id="_D7dheODtEeydTb8Jw5-_uA" name="Gestor de equipa de suporte" actor="_tKmAkOHPEeyyCuc_HDjyTw">
         <elements xmi:type="process:XORGateway" xmi:id="_D7nScODtEeydTb8Jw5-_uA" name="Fatura válida?" outgoing="_D92HGODtEeydTb8Jw5-_uA _D9_4EODtEeydTb8Jw5-_uA" incoming="_D9_4GODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D7nScuDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D7nSceDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -71,7 +71,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_D76NdODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_D8D-YODtEeydTb8Jw5-_uA" name="Gestor de projeto">
+      <elements xmi:type="process:Lane" xmi:id="_D8D-YODtEeydTb8Jw5-_uA" name="Gestor de projeto" actor="_ua05YOHPEeyyCuc_HDjyTw">
         <elements xmi:type="process:XORGateway" xmi:id="_D8NvYODtEeydTb8Jw5-_uA" name="Fatura válida?" outgoing="_D9s9MODtEeydTb8Jw5-_uA _D92HEODtEeydTb8Jw5-_uA" incoming="_D9s9KODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D8NvYuDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D8NvYeDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -157,6 +157,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_D9_4GeDtEeydTb8Jw5-_uA"/>
         <condition xmi:type="expression:Expression" xmi:id="_D9_4GuDtEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
+      <actors xmi:type="process:Actor" xmi:id="_qpO3EOHPEeyyCuc_HDjyTw" name="Comercial" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_tKmAkOHPEeyyCuc_HDjyTw" name="Gestor de equipa de suporte"/>
+      <actors xmi:type="process:Actor" xmi:id="_ua05YOHPEeyyCuc_HDjyTw" name="Gestor de projeto"/>
       <contract xmi:type="process:Contract" xmi:id="_D6t6pODtEeydTb8Jw5-_uA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_D6t6keDtEeydTb8Jw5-_uA">
         <name xmi:type="expression:Expression" xmi:id="_D6t6kuDtEeydTb8Jw5-_uA" content="" returnTypeFixed="true"/>
@@ -180,7 +183,7 @@
       </searchIndexes>
     </elements>
     <elements xmi:type="process:Pool" xmi:id="_D8gqYODtEeydTb8Jw5-_uA" name="faturacao">
-      <elements xmi:type="process:Lane" xmi:id="_D8p0QODtEeydTb8Jw5-_uA" name="Contabilidade">
+      <elements xmi:type="process:Lane" xmi:id="_D8p0QODtEeydTb8Jw5-_uA" name="Contabilidade" actor="_vhlGEOHPEeyyCuc_HDjyTw">
         <elements xmi:type="process:StartEvent" xmi:id="_D8p0SeDtEeydTb8Jw5-_uA" name="Existem faturas para passar" outgoing="_D-ve8ODtEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D8p0S-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D8p0SuDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -318,6 +321,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_D-ve8eDtEeydTb8Jw5-_uA"/>
         <condition xmi:type="expression:Expression" xmi:id="_D-ve8uDtEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
+      <actors xmi:type="process:Actor" xmi:id="_vhlGEOHPEeyyCuc_HDjyTw" name="Contabilidade" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_D8gqdODtEeydTb8Jw5-_uA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_D8gqYeDtEeydTb8Jw5-_uA">
         <name xmi:type="expression:Expression" xmi:id="_D8gqYuDtEeydTb8Jw5-_uA" content="" returnTypeFixed="true"/>
