@@ -32,6 +32,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYVyguDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BYVygeDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BYVyg-DvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
+          <condition xmi:type="expression:Expression" xmi:id="_8tO6oOMlEeykce4rWGppfg" name="180 Days 00:00:00" content="15552000000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
         </elements>
         <elements xmi:type="process:IntermediateCatchTimerEvent" xmi:id="_BYYOwODvEeydTb8Jw5-_uA" name="Data combinada de manutenção proativa alcançada" outgoing="_BZPxcODvEeydTb8Jw5-_uA" incoming="_BZMuIODvEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYYOwuDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>

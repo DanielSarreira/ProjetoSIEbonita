@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.14.0">
     <businessObjects>
+        <businessObject qualifiedName="com.company.model.Cliente">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="morada" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Contrato">
             <fields>
                 <field type="BOOLEAN" length="255" name="suporte" nullable="true" collection="false"/>
@@ -10,7 +19,7 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.company.model.Faturas">
+        <businessObject qualifiedName="com.company.model.Fatura">
             <fields>
                 <field type="INTEGER" length="255" name="nrHoras" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_validado" nullable="true" collection="false"/>
@@ -27,6 +36,7 @@
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="proposta" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_acabado" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Fatura" fetchType="LAZY" name="faturas" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -42,6 +52,7 @@
                 <field type="BOOLEAN" length="255" name="is_standart" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_valida" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_suporte" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="cliente" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -50,6 +61,7 @@
         <businessObject qualifiedName="com.company.model.Sessoes">
             <fields>
                 <field type="OFFSETDATETIME" length="255" name="data_sessao" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Projeto" fetchType="LAZY" name="projeto" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
