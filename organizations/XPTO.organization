@@ -64,6 +64,7 @@
     <user userName="sofiabataguas">
       <firstName>Sofia</firstName>
       <lastName>Bataguas</lastName>
+      <manager>rafaelmaria</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -72,6 +73,7 @@
     <user userName="andresilvestre">
       <firstName>André</firstName>
       <lastName>Silvestre</lastName>
+      <manager>adamcastro</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -88,6 +90,7 @@
     <user userName="adamcastro">
       <firstName>Adam</firstName>
       <lastName>Castro</lastName>
+      <manager>soniafilipe</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -96,6 +99,7 @@
     <user userName="barnardosilva">
       <firstName>Bernardo</firstName>
       <lastName>Silva</lastName>
+      <manager>adamcastro</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -112,6 +116,7 @@
     <user userName="barbararibeiro">
       <firstName>Bárbara</firstName>
       <lastName>Ribeiro</lastName>
+      <manager>rafaelmaria</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -128,6 +133,7 @@
     <user userName="alexandrececilio">
       <firstName>Alexandre</firstName>
       <lastName>Cecilio</lastName>
+      <manager>adamcastro</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -136,6 +142,7 @@
     <user userName="ritaaguas">
       <firstName>Rita</firstName>
       <lastName>Águas</lastName>
+      <manager>rafaelmaria</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -239,52 +246,62 @@
     <membership>
       <userName>sofiabataguas</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Devs</groupName>
+      <groupParentPath>/Xpto/Equipaprojeto</groupParentPath>
     </membership>
     <membership>
       <userName>andresilvestre</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Membros</groupName>
+      <groupParentPath>/Xpto/Equipatecnica</groupParentPath>
     </membership>
     <membership>
       <userName>soniafilipe</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Diretor</groupName>
+      <groupParentPath>/Xpto/Equipatecnica</groupParentPath>
     </membership>
     <membership>
       <userName>adamcastro</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Gestorequipa</groupName>
+      <groupParentPath>/Xpto/Equipatecnica</groupParentPath>
     </membership>
     <membership>
       <userName>barnardosilva</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Membros</groupName>
+      <groupParentPath>/Xpto/Equipatecnica</groupParentPath>
     </membership>
     <membership>
       <userName>joaoronaldo</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Comercial</groupName>
+      <groupParentPath>/Xpto</groupParentPath>
     </membership>
     <membership>
       <userName>barbararibeiro</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Devs</groupName>
+      <groupParentPath>/Xpto/Equipaprojeto</groupParentPath>
     </membership>
     <membership>
       <userName>lucasmachado</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Prevenda</groupName>
+      <groupParentPath>/Xpto</groupParentPath>
     </membership>
     <membership>
       <userName>alexandrececilio</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Membros</groupName>
+      <groupParentPath>/Xpto/Equipatecnica</groupParentPath>
     </membership>
     <membership>
       <userName>ritaaguas</userName>
       <roleName>membro</roleName>
-      <groupName>Xpto</groupName>
+      <groupName>Devs</groupName>
+      <groupParentPath>/Xpto/Equipaprojeto</groupParentPath>
     </membership>
     <membership>
       <userName>mariacarvalho</userName>

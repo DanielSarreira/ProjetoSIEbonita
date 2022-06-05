@@ -12,6 +12,72 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D7KmguDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D7KmgeDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_D7Kmg-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_FxAAEOS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_FxAAEeS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxAAEuS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FxAAE-S5EeyGi7mpJIpZmA" name="faturaInput.nrHoras" content="faturaInput?.nrHoras" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_FxAAFOS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_FxAAFeS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setNrHoras">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_FxAAFuS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_FxAAF-S5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxAAGOS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FxAAGeS5EeyGi7mpJIpZmA" name="faturaInput.is_validado" content="faturaInput?.is_validado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_FxAAGuS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_FxAAG-S5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validado">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_FxAAHOS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_FxAAHeS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxAAHuS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FxAAH-S5EeyGi7mpJIpZmA" name="faturaInput.is_aceite" content="faturaInput?.is_aceite" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_FxAAIOS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_FxAAIeS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_aceite">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_FxAAIuS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_FxAAI-S5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxAAJOS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FxAAJeS5EeyGi7mpJIpZmA" name="faturaInput.is_desuporte" content="faturaInput?.is_desuporte" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_FxAAJuS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_FxAAJ-S5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_desuporte">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_FxAAKOS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_FxAAKeS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxAAKuS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FxAAK-S5EeyGi7mpJIpZmA" name="faturaInput.is_validadesuporte" content="faturaInput?.is_validadesuporte" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_FxAALOS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_FxAALeS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validadesuporte">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_FxAALuS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_FxAAL-S5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxAAMOS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FxAAMeS5EeyGi7mpJIpZmA" name="faturaInput.is_validadeprojeto" content="faturaInput?.is_validadeprojeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_FxAAMuS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_FxAAM-S5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validadeprojeto">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_D7KmhODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_D7KmheDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_D7KmhuDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -20,7 +86,16 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_D7KmiuDtEeydTb8Jw5-_uA">
             <targetForm xmi:type="expression:Expression" xmi:id="_D7Kmi-DtEeydTb8Jw5-_uA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_D7KmieDtEeydTb8Jw5-_uA"/>
+          <contract xmi:type="process:Contract" xmi:id="_D7KmieDtEeydTb8Jw5-_uA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_Fw-x8OS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" dataReference="fatura" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Fw-x8eS5EeyGi7mpJIpZmA" name="nrHoras" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Fw-x8uS5EeyGi7mpJIpZmA" name="is_validado" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Fw-x8-S5EeyGi7mpJIpZmA" name="is_aceite" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Fw-x9OS5EeyGi7mpJIpZmA" name="is_desuporte" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Fw-x9eS5EeyGi7mpJIpZmA" name="is_validadesuporte" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Fw-x9uS5EeyGi7mpJIpZmA" name="is_validadeprojeto" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_D7KmjODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_D7KmkODtEeydTb8Jw5-_uA" name="Fatura válida?" outgoing="_D9QRRODtEeydTb8Jw5-_uA _D9jMIODtEeydTb8Jw5-_uA" incoming="_D9aCNODtEeydTb8Jw5-_uA">
@@ -59,6 +134,72 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D76NauDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D76NaeDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_D76Na-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_Ho25kOS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ho25keS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ho25kuS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ho25k-S5EeyGi7mpJIpZmA" name="faturaInput.nrHoras" content="faturaInput?.nrHoras" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ho25lOS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ho25leS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setNrHoras">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ho25luS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ho25l-S5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ho25mOS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ho25meS5EeyGi7mpJIpZmA" name="faturaInput.is_validado" content="faturaInput?.is_validado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ho25muS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ho25m-S5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validado">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ho25nOS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ho25neS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ho25nuS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ho25n-S5EeyGi7mpJIpZmA" name="faturaInput.is_aceite" content="faturaInput?.is_aceite" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ho25oOS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ho25oeS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_aceite">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ho25ouS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ho25o-S5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ho25pOS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ho25peS5EeyGi7mpJIpZmA" name="faturaInput.is_desuporte" content="faturaInput?.is_desuporte" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ho25puS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ho25p-S5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_desuporte">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ho25qOS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ho25qeS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ho25quS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ho25q-S5EeyGi7mpJIpZmA" name="faturaInput.is_validadesuporte" content="faturaInput?.is_validadesuporte" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ho25rOS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ho25reS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validadesuporte">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ho25ruS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ho25r-S5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ho25sOS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ho25seS5EeyGi7mpJIpZmA" name="faturaInput.is_validadeprojeto" content="faturaInput?.is_validadeprojeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ho25suS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ho25s-S5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validadeprojeto">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_D76NbODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_D76NbeDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_D76NbuDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -67,7 +208,16 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_D76NcuDtEeydTb8Jw5-_uA">
             <targetForm xmi:type="expression:Expression" xmi:id="_D76Nc-DtEeydTb8Jw5-_uA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_D76NceDtEeydTb8Jw5-_uA"/>
+          <contract xmi:type="process:Contract" xmi:id="_D76NceDtEeydTb8Jw5-_uA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_Ho2SgOS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" dataReference="fatura" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ho2SgeS5EeyGi7mpJIpZmA" name="nrHoras" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ho2SguS5EeyGi7mpJIpZmA" name="is_validado" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ho2Sg-S5EeyGi7mpJIpZmA" name="is_aceite" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ho2ShOS5EeyGi7mpJIpZmA" name="is_desuporte" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ho2SheS5EeyGi7mpJIpZmA" name="is_validadesuporte" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ho2ShuS5EeyGi7mpJIpZmA" name="is_validadeprojeto" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_D76NdODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
@@ -91,6 +241,72 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_D8gqUuDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_D8gqUeDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_D8gqU-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_Ip6t9-S5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ip6t-OS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ip6t-eS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ip6t-uS5EeyGi7mpJIpZmA" name="faturaInput.nrHoras" content="faturaInput?.nrHoras" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ip6t--S5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ip6t_OS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setNrHoras">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ip6t_eS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ip6t_uS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ip6t_-S5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ip6uAOS5EeyGi7mpJIpZmA" name="faturaInput.is_validado" content="faturaInput?.is_validado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ip6uAeS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ip6uAuS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validado">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ip6uA-S5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ip6uBOS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ip6uBeS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ip6uBuS5EeyGi7mpJIpZmA" name="faturaInput.is_aceite" content="faturaInput?.is_aceite" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ip6uB-S5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ip6uCOS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_aceite">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ip6uCeS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ip6uCuS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ip6uC-S5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ip6uDOS5EeyGi7mpJIpZmA" name="faturaInput.is_desuporte" content="faturaInput?.is_desuporte" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ip6uDeS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ip6uDuS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_desuporte">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ip6uD-S5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ip6uEOS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ip6uEeS5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ip6uEuS5EeyGi7mpJIpZmA" name="faturaInput.is_validadesuporte" content="faturaInput?.is_validadesuporte" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ip6uE-S5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ip6uFOS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validadesuporte">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_Ip6uFeS5EeyGi7mpJIpZmA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_Ip6uFuS5EeyGi7mpJIpZmA" name="fatura" content="fatura" type="TYPE_VARIABLE" returnType="com.company.model.Fatura">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ip6uF-S5EeyGi7mpJIpZmA" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_Ip6uGOS5EeyGi7mpJIpZmA" name="faturaInput.is_validadeprojeto" content="faturaInput?.is_validadeprojeto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_Ip6uGeS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_Ip6uGuS5EeyGi7mpJIpZmA" type="JAVA_METHOD" expression="setIs_validadeprojeto">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_D8gqVODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_D8gqVeDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_D8gqVuDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -99,11 +315,20 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_D8gqWuDtEeydTb8Jw5-_uA">
             <targetForm xmi:type="expression:Expression" xmi:id="_D8gqW-DtEeydTb8Jw5-_uA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_D8gqWeDtEeydTb8Jw5-_uA"/>
+          <contract xmi:type="process:Contract" xmi:id="_D8gqWeDtEeydTb8Jw5-_uA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_Ip6t8OS5EeyGi7mpJIpZmA" name="faturaInput" type="COMPLEX" dataReference="fatura" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ip6t8eS5EeyGi7mpJIpZmA" name="nrHoras" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ip6t8uS5EeyGi7mpJIpZmA" name="is_validado" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ip6t8-S5EeyGi7mpJIpZmA" name="is_aceite" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ip6t9OS5EeyGi7mpJIpZmA" name="is_desuporte" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ip6t9eS5EeyGi7mpJIpZmA" name="is_validadesuporte" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_Ip6t9uS5EeyGi7mpJIpZmA" name="is_validadeprojeto" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_D8gqXODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_M-fWYOHYEeyyCuc_HDjyTw" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Faturas">
+      <data xmi:type="process:BusinessObjectData" xmi:id="_M-fWYOHYEeyyCuc_HDjyTw" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura">
         <defaultValue xmi:type="expression:Expression" xmi:id="_M-fWYeHYEeyyCuc_HDjyTw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_D6t6oODtEeydTb8Jw5-_uA">
@@ -291,7 +516,7 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_Wo2fsOHUEeyyCuc_HDjyTw" name="projeto" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Projeto">
         <defaultValue xmi:type="expression:Expression" xmi:id="_Wo2fseHUEeyyCuc_HDjyTw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_en6WEOHWEeyyCuc_HDjyTw" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Faturas">
+      <data xmi:type="process:BusinessObjectData" xmi:id="_en6WEOHWEeyyCuc_HDjyTw" name="fatura" dataType="_D6a_q-DtEeydTb8Jw5-_uA" className="com.company.model.Fatura">
         <defaultValue xmi:type="expression:Expression" xmi:id="_en6WEeHWEeyyCuc_HDjyTw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_D8gqcODtEeydTb8Jw5-_uA">
@@ -338,7 +563,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_D-ckEODtEeydTb8Jw5-_uA" target="_D89WQODtEeydTb8Jw5-_uA" source="_D9QROODtEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_D-ckEeDtEeydTb8Jw5-_uA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_D-ckEuDtEeydTb8Jw5-_uA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_D-ckEuDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_D-mVAODtEeydTb8Jw5-_uA" target="_D89WQODtEeydTb8Jw5-_uA" source="_D8zlSODtEeydTb8Jw5-_uA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_D-mVAeDtEeydTb8Jw5-_uA"/>
@@ -713,7 +938,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_D-ckF-DtEeydTb8Jw5-_uA" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_D-ckFODtEeydTb8Jw5-_uA" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_D-ckFeDtEeydTb8Jw5-_uA" points="[0, 0, -70, 60]$[70, 0, 0, 60]$[70, -60, 0, 0]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_D-ckFeDtEeydTb8Jw5-_uA" points="[50, -1, -90, 99]$[105, -1, -35, 99]$[105, -75, -35, 25]"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_D-mVA-DtEeydTb8Jw5-_uA" type="4001" element="_D-mVAODtEeydTb8Jw5-_uA" source="_D8zlTODtEeydTb8Jw5-_uA" target="_D89WTeDtEeydTb8Jw5-_uA" roundedBendpointsRadius="10" routing="Rectilinear" lineColor="12632256">
       <children xmi:type="notation:DecorationNode" xmi:id="_D-mVBuDtEeydTb8Jw5-_uA" type="6001">

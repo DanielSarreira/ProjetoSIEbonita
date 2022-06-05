@@ -14,6 +14,7 @@
             <fields>
                 <field type="BOOLEAN" length="255" name="suporte" nullable="true" collection="false"/>
                 <field type="DOUBLE" length="255" name="valorfixo" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="data_fim" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
