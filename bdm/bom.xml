@@ -33,6 +33,15 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Necessidade">
+            <fields>
+                <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="esforco" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Projeto">
             <fields>
                 <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="proposta" nullable="true" collection="false"/>
@@ -46,7 +55,7 @@
         <businessObject qualifiedName="com.company.model.Proposta">
             <fields>
                 <field type="STRING" length="255" name="tipoproposta" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="necessidades" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Necessidade" fetchType="LAZY" name="necessidades" nullable="true" collection="true"/>
                 <field type="DOUBLE" length="255" name="preco" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="condicoespagamento" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_aceite" nullable="true" collection="false"/>

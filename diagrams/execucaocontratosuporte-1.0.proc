@@ -12,6 +12,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYOdwuDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BYOdweDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BYOdw-DvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
+          <correlation xmi:type="expression:TableExpression" xmi:id="_Y2cSsOY0EeyGi7mpJIpZmA"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_BYSIIODvEeydTb8Jw5-_uA" name="Resolver pedido de suporte" outgoing="_BY3-AODvEeydTb8Jw5-_uA" incoming="_BY06sODvEeydTb8Jw5-_uA" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYSIIuDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -59,6 +60,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYjN4uDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BYjN4eDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BYjN4-DvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
+          <condition xmi:type="expression:Expression" xmi:id="_tAqwUOY0EeyGi7mpJIpZmA"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_BYlqIODvEeydTb8Jw5-_uA" name="Fim de contrato de suporte" incoming="_BZZicODvEeydTb8Jw5-_uA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYlqIuDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
