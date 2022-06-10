@@ -15,6 +15,7 @@
                 <field type="BOOLEAN" length="255" name="suporte" nullable="true" collection="false"/>
                 <field type="DOUBLE" length="255" name="valorfixo" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="data_fim" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="EAGER" name="proposta" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -44,10 +45,9 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Projeto">
             <fields>
-                <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="LAZY" name="proposta" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="EAGER" name="proposta" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_acabado" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Fatura" fetchType="LAZY" name="faturas" nullable="true" collection="true"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="cliente" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Fatura" fetchType="EAGER" name="faturas" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -56,14 +56,14 @@
         <businessObject qualifiedName="com.company.model.Proposta">
             <fields>
                 <field type="STRING" length="255" name="tipoproposta" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Necessidade" fetchType="LAZY" name="necessidades" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Necessidade" fetchType="EAGER" name="necessidades" nullable="true" collection="true"/>
                 <field type="DOUBLE" length="255" name="preco" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="condicoespagamento" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_aceite" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_standart" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_valida" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_suporte" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="cliente" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="EAGER" name="cliente" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -81,7 +81,7 @@
         <businessObject qualifiedName="com.company.model.Sessoes">
             <fields>
                 <field type="OFFSETDATETIME" length="255" name="data_sessao" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Projeto" fetchType="LAZY" name="projeto" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Projeto" fetchType="EAGER" name="projeto" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
