@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ElaborarPropostaContratoSuporte",
   "name" : "ElaborarPropostaContratoSuporte",
-  "lastUpdate" : 1654615029845,
+  "lastUpdate" : 1654886477707,
   "rows" : [
     [
       {
@@ -252,7 +252,7 @@
                       "propertyValues" : {
                         "repeatedCollection" : {
                           "type" : "variable",
-                          "value" : "proposta_necessidades"
+                          "value" : "proposta.necessidades"
                         },
                         "hidden" : {
                           "type" : "constant",
