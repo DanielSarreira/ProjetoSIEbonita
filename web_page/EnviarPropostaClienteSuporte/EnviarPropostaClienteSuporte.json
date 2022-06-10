@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "EnviarPropostaCliente",
-  "name" : "EnviarPropostaCliente",
-  "lastUpdate" : 1654877864371,
+  "id" : "EnviarPropostaClienteSuporte",
+  "name" : "EnviarPropostaClienteSuporte",
+  "lastUpdate" : 1654893569834,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "78d10e38-f3a0-4ffb-b0f1-e8e0ceaa0fe4",
+        "reference" : "ea9d7f85-4da4-4c82-8581-4409eed19740",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "beb1a024-61e5-450e-a0af-83cb6904eec0",
+              "reference" : "26fdd72e-1dce-4a89-9e68-5d58f0a4e721",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d2fa75a4-fc39-4bd6-960c-3ce8b44cf25b",
+              "reference" : "3a5fb99f-fe9a-4b68-80ee-5421a20b0e3a",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -113,17 +113,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "7d804cfe-7112-4d28-a7fa-286f58844149",
+        "propertyValues" : { },
+        "reference" : "d8341810-9e74-4e2f-af8d-048d330110ab",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -132,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "b00ddb18-393a-4697-ba46-a1c24903f0df",
+          "reference" : "b0afb523-8c4f-4ba5-a1fe-82f3cecbbdb5",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -140,40 +131,123 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Proposta"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "197c8309-0cb7-403f-aa54-e1a2b8bc42f5",
+                "hasValidationError" : false,
+                "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "disabled" : {
+                  "cssClasses" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : ""
                   },
-                  "required" : {
+                  "dimension" : {
                     "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Proposta Aceite"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "context.proposta.is_valida"
+                    "value" : 12
                   }
                 },
-                "reference" : "16d84943-7520-4cd4-8261-ff12827f979b",
+                "reference" : "a392bc0b-06a0-438d-86e8-46b70c2f70f2",
                 "hasValidationError" : false,
-                "id" : "pbCheckbox"
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Proposta Aceite"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "proposta.is_aceite"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "c618b35c-5bb1-4b1a-ae69-638209f30f38",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -203,7 +277,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submeter"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -245,32 +319,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "25c3f8f9-d269-4ca1-8cbc-08ec5c416c5a",
+                "reference" : "196a36aa-5a30-4b8f-9ebe-fd6e156b94d1",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -320,17 +371,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
                   }
                 },
-                "reference" : "f47e1553-b33e-4de0-85a8-3dfe169a325a",
+                "reference" : "c886025d-c80b-4fa8-ba4e-b4e5c1005089",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -343,14 +386,14 @@
   ],
   "assets" : [
     {
-      "id" : "e7dce25c-845b-41c3-9eb0-804b08655d00",
+      "id" : "55a36ef0-5816-4e82-970d-3a4331175ab4",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "f27c3be1-66a1-4024-87a9-83f269f933c4",
+      "id" : "bc97c157-02e6-43f4-be5e-89ccf931c278",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
@@ -381,11 +424,46 @@
       ],
       "exposed" : false
     },
+    "proposta" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.proposta_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "cliente_query" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Cliente?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    },
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "",
+        "if( $data.proposta ){",
+        "\treturn {",
+        "\t\t//map proposta variable to expected task contract input",
+        "\t\tpropostaInput: {",
+        "\t\t\ttipoproposta: $data.proposta.tipoproposta !== undefined ? $data.proposta.tipoproposta : null,",
+        "\t\t\tnecessidades: $data.proposta.necessidades.map( it => ({",
+        "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
+        "\t\t\t\tdescricao: it.descricao !== undefined ? it.descricao : null,",
+        "\t\t\t\tesforco: it.esforco !== undefined ? it.esforco : null",
+        "\t\t\t})),",
+        "\t\t\tpreco: $data.proposta.preco !== undefined ? $data.proposta.preco : null,",
+        "\t\t\tcondicoespagamento: $data.proposta.condicoespagamento !== undefined ? $data.proposta.condicoespagamento : null,",
+        "\t\t\tis_aceite: $data.proposta.is_aceite !== undefined ? $data.proposta.is_aceite : null,",
+        "\t\t\tis_standart: $data.proposta.is_standart !== undefined ? $data.proposta.is_standart : null,",
+        "\t\t\tis_valida: $data.proposta.is_valida !== undefined ? $data.proposta.is_valida : null,",
+        "\t\t\tis_suporte: $data.proposta.is_suporte !== undefined ? $data.proposta.is_suporte : null,",
+        "\t\t\tcliente: $data.proposta.cliente ? {",
+        "\t\t\t\tpersistenceId_string: $data.proposta.cliente.persistenceId_string !== undefined ? $data.proposta.cliente.persistenceId_string : null,",
+        "\t\t\t\tnome: $data.proposta.cliente.nome !== undefined ? $data.proposta.cliente.nome : null,",
+        "\t\t\t\tmorada: $data.proposta.cliente.morada !== undefined ? $data.proposta.cliente.morada : null",
+        "\t\t\t} : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -406,7 +484,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "b76fc760-f6a8-43af-a331-de0aeeaa03e1",
+  "uuid" : "f68d5809-6b06-45ec-b6e4-b99fa0654e24",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
