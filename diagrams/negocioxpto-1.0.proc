@@ -394,6 +394,11 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_gY-rAeDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_gY-rA-DtEeydTb8Jw5-_uA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_gY-rAuDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_hQc1UOs8EeyTFPNLb3Dz8w" subprocessTarget="proposta" assignationType="Data">
+            <processSource xmi:type="expression:Expression" xmi:id="_hQc1Ues8EeyTFPNLb3Dz8w" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_iLWXUOs8EeyTFPNLb3Dz8w" documentation="proposta para o cliente" name="proposta" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Proposta"/>
+            </processSource>
+          </inputMappings>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_gY-q_eDtEeydTb8Jw5-_uA" name="Elaboracao da proposta do projeto a medida do cliente" content="Elaboracao da proposta do projeto a medida do cliente" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_gY-q_uDtEeydTb8Jw5-_uA" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
