@@ -569,7 +569,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_mFNODODtEeydTb8Jw5-_uA" type="3008" element="_mFNOCODtEeydTb8Jw5-_uA" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_mFNODuDtEeydTb8Jw5-_uA" type="5026">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_mFNOD-DtEeydTb8Jw5-_uA" x="-15" y="30"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_mFNOD-DtEeydTb8Jw5-_uA" y="16"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mFNODeDtEeydTb8Jw5-_uA" x="265" y="147"/>
             </children>
