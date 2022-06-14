@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ElaboracaoPropostaContratoSuporte",
   "name" : "ElaboracaoPropostaContratoSuporte",
-  "lastUpdate" : 1654889525678,
+  "lastUpdate" : 1655222322984,
   "rows" : [
     [
       {
@@ -629,7 +629,7 @@
                               },
                               "hidden" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : true
                               },
                               "labelPosition" : {
                                 "type" : "constant",
@@ -669,7 +669,7 @@
                               },
                               "disabled" : {
                                 "type" : "constant",
-                                "value" : false
+                                "value" : true
                               },
                               "displayedKey" : {
                                 "type" : "constant",
