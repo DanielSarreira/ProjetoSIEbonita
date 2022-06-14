@@ -150,7 +150,7 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_gYrwCODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_gYrwCuDtEeydTb8Jw5-_uA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_gYrwCeDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <inputMappings xmi:type="process:InputMapping" xmi:id="_TpT-gOGqEeyyCuc_HDjyTw" subprocessTarget="">
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_TpT-gOGqEeyyCuc_HDjyTw" subprocessTarget="proposta" assignationType="Data">
             <processSource xmi:type="expression:Expression" xmi:id="_TpT-geGqEeyyCuc_HDjyTw" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_IDSrsOGsEeyyCuc_HDjyTw" documentation="proposta para o cliente" name="proposta" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Proposta"/>
             </processSource>
