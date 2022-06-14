@@ -19,7 +19,11 @@
                 <field type="LOCALDATE" length="255" name="data_proativa" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="findAtivos" content="SELECT c &#13;&#10;FROM Contrato c &#13;&#10;WHERE c.data_fim &gt; CURRENT_DATE&#13;&#10;ORDER BY c.persistenceId ASC" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Fatura">
@@ -65,7 +69,7 @@
                 <field type="BOOLEAN" length="255" name="is_standart" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_valida" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_suporte" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="cliente" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Cliente" fetchType="EAGER" name="cliente" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
