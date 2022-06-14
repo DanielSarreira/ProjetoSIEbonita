@@ -16,6 +16,7 @@
                 <field type="DOUBLE" length="255" name="valorfixo" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="data_fim" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.Proposta" fetchType="EAGER" name="proposta" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="data_proativa" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -29,6 +30,7 @@
                 <field type="BOOLEAN" length="255" name="is_desuporte" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_validadesuporte" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_validadeprojeto" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="valor" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
