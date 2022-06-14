@@ -8,7 +8,7 @@
 .Forms do processo Execução do projeto -> Ninguém (Estado:)  
 .Forms do sub-processo Faturação -> Gameiro (Estado:Inicio)  
 .Forms de processo Execução de contrato de Suporte -> Ninguém (Estado:)  
-.Forms de processo Elaboração de prosposta á medida -> Holt (Estado:Metade)  
+.Forms de processo Elaboração de prosposta á medida -> Holt (Estado:Feito)  
   
 ->Resolução de Erros:  
 . Temos um erro no processo Execução de contrato de suporte
