@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "validarRequisitosComCliente",
   "name" : "validarRequisitosComCliente",
-  "lastUpdate" : 1655150185324,
+  "lastUpdate" : 1655214571640,
   "rows" : [
     [
       {
@@ -514,6 +514,42 @@
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "-------------------------------------"
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "center"
+                              }
+                            },
+                            "reference" : "61b007b2-5be0-456c-bbb8-1eac950b7536",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle"
                           }
                         ],
                         [
