@@ -8,11 +8,18 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BYIXIeDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BYIXI-DvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:IntermediateCatchMessageEvent" xmi:id="_BYOdwODvEeydTb8Jw5-_uA" name="Pedido de suporte recebido" outgoing="_BY06sODvEeydTb8Jw5-_uA" incoming="_BYwCMODvEeydTb8Jw5-_uA">
+        <elements xmi:type="process:IntermediateCatchMessageEvent" xmi:id="_BYOdwODvEeydTb8Jw5-_uA" name="Pedido de suporte recebido" outgoing="_BY06sODvEeydTb8Jw5-_uA" incoming="_BYwCMODvEeydTb8Jw5-_uA" event="cliente">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYOdwuDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BYOdweDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BYOdw-DvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <correlation xmi:type="expression:TableExpression" xmi:id="_Y2cSsOY0EeyGi7mpJIpZmA"/>
+          <messageContent xmi:type="expression:Operation" xmi:id="_aundwOvxEeyYlOtfLaSCZA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_auor4evxEeyYlOtfLaSCZA" name="cliente" content="cliente" type="TYPE_VARIABLE" returnType="com.company.model.Cliente">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_bNwQ0OvxEeyYlOtfLaSCZA" name="cliente" dataType="_BXk9i-DvEeydTb8Jw5-_uA" className="com.company.model.Cliente"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_auor4OvxEeyYlOtfLaSCZA" name="cliente" content="cliente"/>
+            <operator xmi:type="expression:Operator" xmi:id="_auoE0OvxEeyYlOtfLaSCZA" type="ASSIGNMENT"/>
+          </messageContent>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_BYSIIODvEeydTb8Jw5-_uA" name="Resolver pedido de suporte" outgoing="_BY3-AODvEeydTb8Jw5-_uA" incoming="_BY06sODvEeydTb8Jw5-_uA" overrideActorsOfTheLane="false" priority="1">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BYSIIuDvEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
@@ -101,6 +108,9 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_ww2vRuvYEeyTFPNLb3Dz8w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_cwHQ4OvwEeyYlOtfLaSCZA" name="cliente" dataType="_BXk9i-DvEeydTb8Jw5-_uA" className="com.company.model.Cliente">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_cwHQ4evwEeyYlOtfLaSCZA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_BX9YAeDvEeydTb8Jw5-_uA">
         <targetForm xmi:type="expression:Expression" xmi:id="_BX9YAuDvEeydTb8Jw5-_uA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
