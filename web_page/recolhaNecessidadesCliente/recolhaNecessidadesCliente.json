@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "recolhaNecessidadesCliente",
   "name" : "recolhaNecessidadesCliente",
-  "lastUpdate" : 1655138427536,
+  "lastUpdate" : 1655218643064,
   "rows" : [
     [
       {
@@ -735,7 +735,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "context.novoCliente"
+                          "value" : "formInput.novoClienteInput"
                         }
                       },
                       "reference" : "0be84409-e9b7-4635-9d95-5978586532cf",
@@ -759,7 +759,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "context.novoCliente == false"
+                          "value" : "formInput.novoClienteInput == false"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -957,7 +957,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "context.novoCliente == true"
+                          "value" : "formInput.novoClienteInput == true"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -1251,7 +1251,8 @@
       "value" : [
         "return {",
         "\tclienteInput: $data.formInput.clienteInput,",
-        "\tpropostaInput: $data.formInput.propostaInput",
+        "\tpropostaInput: $data.formInput.propostaInput,",
+        "\tnovoClienteInput: $data.formInput.novoClienteInput",
         "}"
       ],
       "exposed" : false

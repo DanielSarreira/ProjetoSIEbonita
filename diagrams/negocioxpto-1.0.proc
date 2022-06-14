@@ -63,14 +63,26 @@
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_fbcvYOvoEeyYlOtfLaSCZA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_fbcvYevoEeyYlOtfLaSCZA" name="novoCliente" content="novoCliente" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:Data" xmi:id="_f6qa8OvoEeyYlOtfLaSCZA" name="novoCliente" dataType="_gXyYI-DtEeydTb8Jw5-_uA"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_fbcvYuvoEeyYlOtfLaSCZA" name="novoClienteInput" content="novoClienteInput" type="TYPE_CONTRACT_INPUT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_X04KIOvpEeyYlOtfLaSCZA" name="novoClienteInput" type="BOOLEAN">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_X04KIevpEeyYlOtfLaSCZA"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_fbcvY-voEeyYlOtfLaSCZA" type="ASSIGNMENT"/>
+          </operations>
           <operations xmi:type="expression:Operation" xmi:id="_dpgyz-jFEeyv8PsKTUyEHw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_dpgy0OjFEeyv8PsKTUyEHw" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dpgy0ejFEeyv8PsKTUyEHw" documentation="proposta para o cliente" name="proposta" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Proposta"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dpgy0ujFEeyv8PsKTUyEHw" name="propostaInput.cliente" content="//Retrieve aggregated Cliente using its DAO and persistenceId&#xA;def clienteVarSelect = clienteDAO.findByPersistenceId(propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null)&#xA;if (!clienteVarSelect) {&#xA;&#x9;def clienteVar = clienteDAO.findByPersistenceId(cliente.persistenceId ? cliente.persistenceId: null)&#xA;&#x9;if (!clienteVar) {&#xA;&#x9;&#x9;if (propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null) {&#xA;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Cliente` with the persistence id &quot; + propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;return null&#xA;&#x9;}&#xA;&#x9;return clienteVar&#xA;}&#xA;return clienteVarSelect" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Cliente">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_5IDQsOtJEeyeTNXdXpsSKQ" name="cliente" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Cliente"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_5IDQsetJEeyeTNXdXpsSKQ" name="clienteDAO" content="clienteDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ClienteDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_5IDQsutJEeyeTNXdXpsSKQ" name="propostaInput" type="COMPLEX"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dpgy0ujFEeyv8PsKTUyEHw" name="propostaInput.cliente" content="//Retrieve aggregated Cliente using its DAO and persistenceId&#xA;if(novoCliente){&#xA;&#x9;def clienteVar = clienteDAO.findByPersistenceId(cliente.persistenceId ? cliente.persistenceId: null)&#xA;&#x9;if (!clienteVar) {&#xA;&#x9;&#x9;if (propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null) {&#xA;&#x9;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Cliente` with the persistence id &quot; + propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;return null&#xA;&#x9;}&#xA;&#x9;return clienteVar&#xA;}&#xA;def clienteVarSelect = clienteDAO.findByPersistenceId(propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null)&#xA;return clienteVarSelect" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Cliente">
+              <referencedElements xmi:type="process:Data" xmi:id="_sS0qcOvoEeyYlOtfLaSCZA" name="novoCliente" dataType="_gXyYI-DtEeydTb8Jw5-_uA"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_sS0qcevoEeyYlOtfLaSCZA" name="cliente" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Cliente"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_sS0qcuvoEeyYlOtfLaSCZA" name="clienteDAO" content="clienteDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ClienteDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_sS0qc-voEeyYlOtfLaSCZA" name="propostaInput" type="COMPLEX"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dpgy1ejFEeyv8PsKTUyEHw" type="JAVA_METHOD" expression="setCliente">
               <inputTypes>com.company.model.Cliente</inputTypes>
@@ -114,6 +126,9 @@
               <inputs xmi:type="process:ContractInput" xmi:id="_dpgynOjFEeyv8PsKTUyEHw" name="cliente" type="COMPLEX">
                 <inputs xmi:type="process:ContractInput" xmi:id="_dpgynejFEeyv8PsKTUyEHw" name="persistenceId_string"/>
               </inputs>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_URcfoOvpEeyYlOtfLaSCZA" name="novoClienteInput" type="BOOLEAN">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_URcfoevpEeyYlOtfLaSCZA"/>
             </inputs>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_dpgynujFEeyv8PsKTUyEHw" expression="!propostaInput?.cliente || propostaInput?.cliente?.persistenceId_string" errorMessage="Cliente must reference an existing instance with a persistenceId for Proposta" name="aggregation_propostaInput_cliente">
               <inputNames>propostaInput</inputNames>
@@ -419,7 +434,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_My-2IejMEeyv8PsKTUyEHw" name="false" content="false" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_gYFTIODtEeydTb8Jw5-_uA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_th8RwOtgEeyeTNXdXpsSKQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_vfxHkOvoEeyYlOtfLaSCZA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_gYFTIuDtEeydTb8Jw5-_uA">
         <targetForm xmi:type="expression:Expression" xmi:id="_gYFTI-DtEeydTb8Jw5-_uA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
