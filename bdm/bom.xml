@@ -65,7 +65,7 @@
                 <field type="BOOLEAN" length="255" name="is_standart" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_valida" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="is_suporte" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="cliente" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="EAGER" name="cliente" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
