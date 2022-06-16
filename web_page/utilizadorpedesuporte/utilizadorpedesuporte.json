@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "utilizadorpedesuporte",
   "name" : "utilizadorpedesuporte",
-  "lastUpdate" : 1655221204062,
+  "lastUpdate" : 1655399993602,
   "rows" : [
     [
       {
@@ -201,7 +201,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : ""
+                    "value" : "formInput.clienteInput"
                   }
                 },
                 "reference" : "4034d4d4-8b6a-4877-90fb-204742ec4714",
