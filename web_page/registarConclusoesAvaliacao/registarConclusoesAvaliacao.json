@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "entregarProjeto",
-  "name" : "entregarProjeto",
-  "lastUpdate" : 1655400023766,
+  "id" : "registarConclusoesAvaliacao",
+  "name" : "registarConclusoesAvaliacao",
+  "lastUpdate" : 1655402744939,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "19ecd4e4-e075-4242-b380-2026793618bb",
+        "reference" : "ae4b6be0-c412-48e9-8119-cd288d1c6c98",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "935ba00b-2309-44e4-878e-0638afe2fb6a",
+              "reference" : "e4dc5069-0213-4608-b496-ab1fd211cf10",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "6b47decc-4286-4f71-8c50-38a9d5d79b70",
+              "reference" : "2cc106a2-7888-4022-8b5a-a460d80dfe73",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9c2cf314-18a7-4b49-b64b-db3480a0c67f",
+        "reference" : "f8471e45-69d2-4619-966d-fa226250f856",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "dc6023f9-dfd4-4ce6-8cea-760301bf796d",
+          "reference" : "e537afa9-a582-4ba1-9a90-53c73607671e",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -145,17 +145,32 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
                   },
-                  "disabled" : {
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
                     "type" : "constant",
                     "value" : false
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Projeto terminado?"
+                    "value" : "Conclusões da avaliação"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -163,16 +178,116 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.entregarProjeto"
+                    "value" : "formInput.conclusoes"
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
                   }
                 },
-                "reference" : "2ee9d5e2-2c85-4105-bbec-25aefaa01d0c",
+                "reference" : "58118f4f-da3e-4d3a-aee7-2aa7fa21d8e1",
                 "hasValidationError" : false,
-                "id" : "pbCheckbox",
+                "id" : "pbInput",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Desvio de custo em relação ao orçamento"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "number"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.desvio"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "c34d2d7c-1d41-46a2-bc71-f58baf3357eb",
+                "hasValidationError" : false,
+                "id" : "pbInput",
                 "description" : ""
               }
             ],
@@ -247,7 +362,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "58e1f443-f465-4253-9ac4-1424d3687615",
+                "reference" : "cda8b74e-04f8-40d8-98ef-e504ce294308",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -299,7 +414,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "5954161e-3fbf-4d6a-bd2d-328058c14dc9",
+                "reference" : "445c9ed0-3ba2-4ea7-aa89-37bb7d59d5ce",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -312,14 +427,14 @@
   ],
   "assets" : [
     {
-      "id" : "dfc32f02-06fa-46c3-a4cf-459a7b1cec38",
+      "id" : "a8f3089a-3034-4a39-a41a-923f794862a3",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "d8b7284c-64ac-478f-bb9c-c591f8df28b2",
+      "id" : "3b27dc05-696c-4e91-a4c4-f8f2eac6f70f",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -339,7 +454,8 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"entregarProjeto\" : false\r",
+        "  \"conclusoes\" : \"\",\r",
+        "  \"desvio\" : 0\r",
         "}"
       ],
       "exposed" : false
@@ -363,7 +479,8 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tentregarProjeto: $data.formInput.entregarProjeto",
+        "\tconclusoes: $data.formInput.conclusoes,",
+        "\tdesvio: $data.formInput.desvio",
         "}"
       ],
       "exposed" : false
@@ -384,7 +501,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "e8985a60-f3a1-431d-b81d-1f04275f0a8b",
+  "uuid" : "fe16bff9-a120-46b0-b319-2a17e8b82384",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
