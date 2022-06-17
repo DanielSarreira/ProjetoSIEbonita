@@ -41,17 +41,6 @@
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="__Rr3UO2MEeyOW_enJEB8Ug">
-            <leftOperand xmi:type="expression:Expression" xmi:id="__Rr3Ue2MEeyOW_enJEB8Ug" name="cliente" content="cliente" type="TYPE_VARIABLE" returnType="com.company.model.Cliente">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_AQ4DcO2NEeyOW_enJEB8Ug" name="cliente" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Cliente"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="__Rr3Uu2MEeyOW_enJEB8Ug" name="newScript()" content="clienteInput?.email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_JxuHkO2NEeyOW_enJEB8Ug" name="clienteInput" type="COMPLEX"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="__Rr3U-2MEeyOW_enJEB8Ug" type="JAVA_METHOD" expression="setEmail">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
           <operations xmi:type="expression:Operation" xmi:id="_Br54NujFEeyv8PsKTUyEHw">
             <leftOperand xmi:type="expression:Expression" xmi:id="_Br54N-jFEeyv8PsKTUyEHw" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Br54OOjFEeyv8PsKTUyEHw" documentation="proposta para o cliente" name="proposta" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Proposta"/>
@@ -120,9 +109,6 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_cjHLMOjFEeyv8PsKTUyEHw" name="clienteInput" type="COMPLEX" dataReference="cliente">
               <inputs xmi:type="process:ContractInput" xmi:id="_cjHLMejFEeyv8PsKTUyEHw" name="nome"/>
               <inputs xmi:type="process:ContractInput" xmi:id="_cjHLMujFEeyv8PsKTUyEHw" name="morada"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_GxcC4O2MEeyOW_enJEB8Ug" name="email">
-                <mapping xmi:type="process:ContractInputMapping" xmi:id="_GxcC4e2MEeyOW_enJEB8Ug"/>
-              </inputs>
             </inputs>
             <inputs xmi:type="process:ContractInput" xmi:id="_dpgykOjFEeyv8PsKTUyEHw" name="propostaInput" type="COMPLEX" dataReference="proposta">
               <inputs xmi:type="process:ContractInput" xmi:id="_dpgykejFEeyv8PsKTUyEHw" name="tipoproposta"/>
@@ -176,15 +162,47 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_gYrwEODtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_gYrwD-DtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_gYrwEeDtEeydTb8Jw5-_uA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_amzDOe3hEeyXyb-zptxXyQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_amzDOu3hEeyXyb-zptxXyQ" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_amzDO-3hEeyXyb-zptxXyQ" documentation="proposta para o cliente" name="proposta" dataType="_gXyYK-DtEeydTb8Jw5-_uA" className="com.company.model.Proposta"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_amzDPO3hEeyXyb-zptxXyQ" name="propostaInput.is_aceite" content="propostaInput?.is_aceite" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_amzDPe3hEeyXyb-zptxXyQ" name="propostaInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_amzDPu3hEeyXyb-zptxXyQ" type="JAVA_METHOD" expression="setIs_aceite">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_gYrwEuDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_gYrwE-DtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_gYrwFODtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_gYrwFuDtEeydTb8Jw5-_uA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_gYrwFeDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_gYrwGODtEeydTb8Jw5-_uA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_kcoIgejuEeyv8PsKTUyEHw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_fPPN4O3hEeyXyb-zptxXyQ" name="enviarpropostacliente" content="ebc15239-8f1d-429b-a5a0-9bc1c4577a29" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_gYrwF-DtEeydTb8Jw5-_uA"/>
+          <contract xmi:type="process:Contract" xmi:id="_gYrwF-DtEeydTb8Jw5-_uA">
+            <inputs xmi:type="process:ContractInput" xmi:id="_amtjkO3hEeyXyb-zptxXyQ" name="propostaInput" type="COMPLEX" dataReference="proposta" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjke3hEeyXyb-zptxXyQ" name="necessidades" type="COMPLEX" multiple="true" createMode="false">
+                <inputs xmi:type="process:ContractInput" xmi:id="_amtjku3hEeyXyb-zptxXyQ" name="persistenceId_string" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_amtjk-3hEeyXyb-zptxXyQ" name="descricao" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_amtjlO3hEeyXyb-zptxXyQ" name="esforco" type="INTEGER" createMode="false"/>
+              </inputs>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjle3hEeyXyb-zptxXyQ" name="tipoproposta" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjlu3hEeyXyb-zptxXyQ" name="preco" type="DECIMAL" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjl-3hEeyXyb-zptxXyQ" name="condicoespagamento" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjmO3hEeyXyb-zptxXyQ" name="is_aceite" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjme3hEeyXyb-zptxXyQ" name="is_standart" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjmu3hEeyXyb-zptxXyQ" name="is_valida" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjm-3hEeyXyb-zptxXyQ" name="is_suporte" type="BOOLEAN" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_amtjnO3hEeyXyb-zptxXyQ" name="cliente" type="COMPLEX" createMode="false">
+                <inputs xmi:type="process:ContractInput" xmi:id="_amtjne3hEeyXyb-zptxXyQ" name="persistenceId_string" createMode="false"/>
+              </inputs>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_amycEO3hEeyXyb-zptxXyQ" expression="!propostaInput?.cliente || propostaInput?.cliente?.persistenceId_string" errorMessage="Cliente must reference an existing instance with a persistenceId for Proposta" name="aggregation_propostaInput_cliente">
+              <inputNames>propostaInput</inputNames>
+            </constraints>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_gYrwGuDtEeydTb8Jw5-_uA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_gYrwHuDtEeydTb8Jw5-_uA" name="Proposta válida?" outgoing="_gZlH6ODtEeydTb8Jw5-_uA _gZuR2ODtEeydTb8Jw5-_uA" incoming="_gZlH4ODtEeydTb8Jw5-_uA">
@@ -418,7 +436,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_My-2IejMEeyv8PsKTUyEHw" name="false" content="false" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_gYFTIODtEeydTb8Jw5-_uA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_-i2ssO3fEeyNHcrQdATe0w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ZOUpwe3gEeyZzLsnJbzXMg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_gYFTIuDtEeydTb8Jw5-_uA">
         <targetForm xmi:type="expression:Expression" xmi:id="_gYFTI-DtEeydTb8Jw5-_uA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
