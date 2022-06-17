@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "EnviarFaturaCliente",
   "name" : "EnviarFaturaCliente",
-  "lastUpdate" : 1655429794007,
+  "lastUpdate" : 1655463340795,
   "rows" : [
     [
       {
@@ -277,7 +277,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -319,6 +319,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "883cd5f8-21e7-4177-98de-50704460d42c",

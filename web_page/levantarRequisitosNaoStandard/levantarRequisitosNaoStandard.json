@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "levantarRequisitosNaoStandard",
   "name" : "levantarRequisitosNaoStandard",
-  "lastUpdate" : 1655214463026,
+  "lastUpdate" : 1655463744140,
   "rows" : [
     [
       {
@@ -234,7 +234,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipoproposta"
+                          "value" : "Tipo de proposta"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -254,6 +254,24 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "9ac73d7f-269b-49b2-b2cf-8b00a27efb65",
@@ -566,7 +584,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add Necessidade"
+                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Adicionar Necessidade"
                         },
                         "dataToSend" : {
                           "type" : "expression"
@@ -736,7 +754,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Condicoespagamento"
+                          "value" : "Condições de pagamento"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -756,6 +774,24 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "0c68f9c2-0db5-42d9-a1a9-ad0aa7d5ba1f",
@@ -792,7 +828,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_aceite"
+                          "value" : "Proposta aceite?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -841,7 +877,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_standart"
+                          "value" : "Projeto standart?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -890,7 +926,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_valida"
+                          "value" : "Valido?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -939,7 +975,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_suporte"
+                          "value" : "Projeto de suporte?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1228,7 +1264,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1270,6 +1306,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "d05cb746-adfd-40b9-b409-52c5726cedbb",

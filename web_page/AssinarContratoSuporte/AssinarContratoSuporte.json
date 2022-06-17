@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "AssinarContratoSuporte",
   "name" : "AssinarContratoSuporte",
-  "lastUpdate" : 1654897327882,
+  "lastUpdate" : 1655463311632,
   "rows" : [
     [
       {
@@ -323,7 +323,7 @@
                         },
                         "todayLabel" : {
                           "type" : "constant",
-                          "value" : "Today"
+                          "value" : "Hoje"
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -973,7 +973,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1015,6 +1015,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "a376e5a4-3622-4bf7-9a8e-b84bb8ccd734",

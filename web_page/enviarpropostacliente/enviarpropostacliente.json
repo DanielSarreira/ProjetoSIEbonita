@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "enviarpropostacliente",
   "name" : "enviarpropostacliente",
-  "lastUpdate" : 1655435328913,
+  "lastUpdate" : 1655463724748,
   "rows" : [
     [
       {
@@ -439,7 +439,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipoproposta"
+                          "value" : "Tipo de proposta"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -603,7 +603,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Condicoespagamento"
+                          "value" : "Condições de pagamento"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -885,7 +885,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Select a Cliente"
+                          "value" : "Selecionar um Cliente"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -947,7 +947,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -989,6 +989,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "1e03960a-718c-4c89-a2f1-3f9e875b3ddd",

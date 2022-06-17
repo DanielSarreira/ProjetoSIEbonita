@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "EntrarContactoComCliente",
   "name" : "EntrarContactoComCliente",
-  "lastUpdate" : 1655245943082,
+  "lastUpdate" : 1655463334081,
   "rows" : [
     [
       {
@@ -354,7 +354,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -396,6 +396,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "94ba7b73-65d9-41d4-b8af-fa2aff77e595",

@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ValidarFaturaSuporte",
   "name" : "ValidarFaturaSuporte",
-  "lastUpdate" : 1655426741108,
+  "lastUpdate" : 1655463396371,
   "rows" : [
     [
       {
@@ -770,7 +770,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -812,6 +812,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "035eacce-a03a-4fcf-a02c-be9adb8f4f08",

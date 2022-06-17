@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "marcarReuniao",
   "name" : "marcarReuniao",
-  "lastUpdate" : 1655245071745,
+  "lastUpdate" : 1655463503571,
   "rows" : [
     [
       {
@@ -247,7 +247,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Data_reuniao"
+                          "value" : "Data da reuniao"
                         },
                         "type" : {
                           "type" : "constant"
@@ -258,11 +258,11 @@
                         },
                         "todayLabel" : {
                           "type" : "constant",
-                          "value" : "Today"
+                          "value" : "Hoje"
                         },
                         "timePlaceholder" : {
                           "type" : "constant",
-                          "value" : "Enter a time (h:mm:ss a)"
+                          "value" : "Insira a hora (h:mm:ss a)"
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -282,11 +282,11 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "value" : "Insira uma data (mm/dd/yyyy)"
                         },
                         "nowLabel" : {
                           "type" : "constant",
-                          "value" : "Now"
+                          "value" : "Agora"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -347,7 +347,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Select a Cliente"
+                          "value" : "Selecione um Cliente"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -490,7 +490,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipoproposta"
+                          "value" : "Tipo proposta"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -840,7 +840,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add Necessidade"
+                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Adicionar Necessidade"
                         },
                         "dataToSend" : {
                           "type" : "expression"
@@ -878,6 +878,30 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
                         }
                       },
                       "reference" : "1a622421-8ea3-4635-907e-9f93dc2c2026",
@@ -986,7 +1010,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Condicoespagamento"
+                          "value" : "Condicoes pagamento"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1006,6 +1030,24 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "7a1a76aa-974f-44eb-9176-7e3b7b96ae0c",
@@ -1042,7 +1084,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_aceite"
+                          "value" : "Aceite?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1051,6 +1093,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "proposta.is_aceite"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "101b45fa-4747-4364-90cb-7569b691a0e3",
@@ -1087,7 +1133,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_standart"
+                          "value" : "Standart?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1096,6 +1142,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "proposta.is_standart"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "f6a59543-00b8-429e-8d29-e1c1fee90211",
@@ -1132,7 +1182,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_valida"
+                          "value" : "Valido?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1141,6 +1191,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "proposta.is_valida"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "8e8f9432-36ce-4338-b057-5736b3eb9a55",
@@ -1177,7 +1231,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_suporte"
+                          "value" : "Suporte?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1186,6 +1240,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "proposta.is_suporte"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "4a1e1753-05d6-4444-880f-f9a47b033095",
@@ -1426,7 +1484,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1468,6 +1526,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "626a7eaa-4346-4c50-aa31-5ee30338b94e",

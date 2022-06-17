@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "utilizadorpedesuporte",
   "name" : "utilizadorpedesuporte",
-  "lastUpdate" : 1655403856626,
+  "lastUpdate" : 1655463234782,
   "rows" : [
     [
       {
@@ -186,7 +186,7 @@
                   },
                   "placeholder" : {
                     "type" : "interpolation",
-                    "value" : "Select an option"
+                    "value" : "Selecionar um cliente"
                   },
                   "availableValues" : {
                     "type" : "expression",
@@ -236,7 +236,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",

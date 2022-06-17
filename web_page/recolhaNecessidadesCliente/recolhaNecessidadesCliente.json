@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "recolhaNecessidadesCliente",
   "name" : "recolhaNecessidadesCliente",
-  "lastUpdate" : 1655434737509,
+  "lastUpdate" : 1655463183562,
   "rows" : [
     [
       {
@@ -584,7 +584,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add Necessidade"
+                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Adicionar Necessidade"
                         },
                         "dataToSend" : {
                           "type" : "expression"
@@ -682,7 +682,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_standart"
+                          "value" : "proposta standart?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -981,7 +981,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Select a Cliente"
+                          "value" : "Selecionar um Cliente"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1044,7 +1044,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",

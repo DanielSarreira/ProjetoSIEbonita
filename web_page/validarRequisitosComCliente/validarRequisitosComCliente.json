@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "validarRequisitosComCliente",
   "name" : "validarRequisitosComCliente",
-  "lastUpdate" : 1655214571640,
+  "lastUpdate" : 1655463797408,
   "rows" : [
     [
       {
@@ -234,7 +234,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipoproposta"
+                          "value" : "Tipo de proposta"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -680,7 +680,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add Necessidade"
+                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Adicionar Necessidade"
                         },
                         "dataToSend" : {
                           "type" : "expression"
@@ -868,7 +868,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Condicoespagamento"
+                          "value" : "Condições de pagamento"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -991,7 +991,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_standart"
+                          "value" : "Standart?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1040,7 +1040,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_valida"
+                          "value" : "Valido?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1089,7 +1089,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Is_suporte"
+                          "value" : "Suporte?"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1378,7 +1378,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1420,6 +1420,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "386143de-7131-427d-9db5-53e76c434214",

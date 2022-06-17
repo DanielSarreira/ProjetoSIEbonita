@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ValidarFaturaProjeto",
   "name" : "ValidarFaturaProjeto",
-  "lastUpdate" : 1655245138677,
+  "lastUpdate" : 1655463385852,
   "rows" : [
     [
       {
@@ -924,7 +924,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -966,6 +966,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "edda6165-f6e7-401a-ad04-ebc6592ead0e",

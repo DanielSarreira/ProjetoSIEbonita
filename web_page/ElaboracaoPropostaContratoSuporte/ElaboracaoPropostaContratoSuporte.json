@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ElaboracaoPropostaContratoSuporte",
   "name" : "ElaboracaoPropostaContratoSuporte",
-  "lastUpdate" : 1655222322984,
+  "lastUpdate" : 1655463323889,
   "rows" : [
     [
       {
@@ -816,7 +816,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -858,6 +858,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "00f6e0b0-802a-4b62-99a6-edf610e62114",

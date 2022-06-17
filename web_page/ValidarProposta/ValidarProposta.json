@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ValidarProposta",
   "name" : "ValidarProposta",
-  "lastUpdate" : 1655244137464,
+  "lastUpdate" : 1655463405088,
   "rows" : [
     [
       {
@@ -790,7 +790,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",

@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "EnviarPropostaClienteSuporte",
   "name" : "EnviarPropostaClienteSuporte",
-  "lastUpdate" : 1654893569834,
+  "lastUpdate" : 1655463348173,
   "rows" : [
     [
       {
@@ -277,7 +277,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -319,6 +319,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "196a36aa-5a30-4b8f-9ebe-fd6e156b94d1",

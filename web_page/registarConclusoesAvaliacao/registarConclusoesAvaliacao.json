@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "registarConclusoesAvaliacao",
   "name" : "registarConclusoesAvaliacao",
-  "lastUpdate" : 1655402744939,
+  "lastUpdate" : 1655463195299,
   "rows" : [
     [
       {
@@ -318,7 +318,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -360,6 +360,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "cda8b74e-04f8-40d8-98ef-e504ce294308",

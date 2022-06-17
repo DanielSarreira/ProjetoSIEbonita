@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "novoPedidoSuporte",
   "name" : "novoPedidoSuporte",
-  "lastUpdate" : 1655404547894,
+  "lastUpdate" : 1655463518384,
   "rows" : [
     [
       {
@@ -240,7 +240,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Select"
+                          "value" : "Selecionar"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -305,7 +305,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Submeter"
                   },
                   "dataToSend" : {
                     "type" : "expression",
