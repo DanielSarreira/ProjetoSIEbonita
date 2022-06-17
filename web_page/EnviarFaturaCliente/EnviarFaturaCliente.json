@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "EnviarFaturaCliente",
   "name" : "EnviarFaturaCliente",
-  "lastUpdate" : 1655244424964,
+  "lastUpdate" : 1655429794007,
   "rows" : [
     [
       {
@@ -438,13 +438,7 @@
         "\treturn {",
         "\t\t//map fatura variable to expected task contract input",
         "\t\tfaturaInput: {",
-        "\t\t\tnrHoras: $data.fatura.nrHoras !== undefined ? $data.fatura.nrHoras : null,",
-        "\t\t\tis_validado: $data.fatura.is_validado !== undefined ? $data.fatura.is_validado : null,",
         "\t\t\tis_aceite: $data.fatura.is_aceite !== undefined ? $data.fatura.is_aceite : null,",
-        "\t\t\tis_desuporte: $data.fatura.is_desuporte !== undefined ? $data.fatura.is_desuporte : null,",
-        "\t\t\tis_validadesuporte: $data.fatura.is_validadesuporte !== undefined ? $data.fatura.is_validadesuporte : null,",
-        "\t\t\tis_validadeprojeto: $data.fatura.is_validadeprojeto !== undefined ? $data.fatura.is_validadeprojeto : null,",
-        "\t\t\tvalor: $data.fatura.valor !== undefined ? $data.fatura.valor : null",
         "\t\t}",
         "\t}",
         "}"
