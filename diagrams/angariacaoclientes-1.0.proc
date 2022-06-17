@@ -153,8 +153,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_qTRXH-v0EeyvtZnrjQ1ZjQ" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qTRXIOv0EeyvtZnrjQ1ZjQ" name="proposta" dataType="_mEbK2ODtEeydTb8Jw5-_uA" className="com.company.model.Proposta"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_qTRXIev0EeyvtZnrjQ1ZjQ" name="propostaInput.cliente" content="if (!propostaInput?.cliente) {&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;def clienteVar = new com.company.model.Cliente()&#xD;&#xA;clienteVar.nome = propostaInput?.cliente?.nome&#xD;&#xA;clienteVar.morada = propostaInput?.cliente?.morada&#xD;&#xA;return clienteVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Cliente">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_qTRXIuv0EeyvtZnrjQ1ZjQ" name="propostaInput" type="COMPLEX"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_qTRXIev0EeyvtZnrjQ1ZjQ" name="propostaInput.cliente" content="//Retrieve aggregated Cliente using its DAO and persistenceId&#xD;&#xA;def clienteVar = clienteDAO.findByPersistenceId(propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null)&#xD;&#xA;if (!clienteVar) {&#xD;&#xA;&#x9;if (propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null) {&#xD;&#xA;&#x9;&#x9;throw new IllegalArgumentException(&quot;The aggregated reference of type `Cliente` with the persistence id &quot; + propostaInput?.cliente?.persistenceId_string?.trim() ? propostaInput.cliente.persistenceId_string.toLong() : null + &quot; has not been found.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;return clienteVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Cliente">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_6FuTsO3XEeyOW_enJEB8Ug" name="clienteDAO" content="clienteDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.ClienteDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_6FuTse3XEeyOW_enJEB8Ug" name="propostaInput" type="COMPLEX"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_qTRXI-v0EeyvtZnrjQ1ZjQ" type="JAVA_METHOD" expression="setCliente">
               <inputTypes>com.company.model.Cliente</inputTypes>
@@ -418,7 +419,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_X-_10evxEeyvtZnrjQ1ZjQ" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_mEwiEODtEeydTb8Jw5-_uA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_qSLt8OwgEeyKhsJ24Dv5kA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_uoJdIO3XEeyOW_enJEB8Ug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_mEwiEuDtEeydTb8Jw5-_uA">
         <targetForm xmi:type="expression:Expression" xmi:id="_dA31gOZlEey1vJC6sw-Neg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
