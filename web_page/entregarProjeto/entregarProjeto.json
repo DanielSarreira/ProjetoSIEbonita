@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "entregarProjeto",
   "name" : "entregarProjeto",
-  "lastUpdate" : 1655245871164,
+  "lastUpdate" : 1655400023766,
   "rows" : [
     [
       {
@@ -155,7 +155,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Entregar Projeto"
+                    "value" : "Projeto terminado?"
                   },
                   "dimension" : {
                     "type" : "constant",
